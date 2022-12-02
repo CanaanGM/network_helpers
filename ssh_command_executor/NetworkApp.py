@@ -13,4 +13,4 @@ try:
 
 except KeyboardInterrupt:
     print("\n\n* Program aborted by user. Exiting...\n")
-    sys.exit()
+    sys.exit(0)
