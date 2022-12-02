@@ -7,7 +7,8 @@ def validate_file() -> list[str]:
     >> list[str]
     """
 
-    ip_file = input("\n# Provide the path to the file")
+    ip_file = input("\nIp file path: ")
+    if ip_file == '': ip_file = "./ssh_command_executor/ip_file.txt"
     if os.path.isfile(ip_file):
         print("\nFile exsits, extracting IPs\n")
     else:
