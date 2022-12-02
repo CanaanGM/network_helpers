@@ -38,15 +38,6 @@ def ssh_connection(ip):
 
                 connection = client.invoke_shell()
 
-                """
-                send    -> 
-                recieve <-
-                something is missing here
-                     
-                """
-
-                # open the command file to start using them
-
                 with open(commads_file, mode="rt") as cmd_file:
                     lines = cmd_file.readlines()
                     line_count = len(lines)
