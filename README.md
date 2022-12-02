@@ -1,5 +1,5 @@
 ## collection of tools to help and automate network tasks
-#### can use ansible but learning from the ground up is cool too
+#### they're are many better tools but one will not learn unless one creates
 
 > [ssh_commands_executor](./ssh_command_executor/README.md) is a poor mans ansible xD
 - uses paramiko to connect to the server(s) and executes stuff
