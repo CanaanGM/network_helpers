@@ -1,6 +1,7 @@
 import sys, subprocess
 
-def ip_reachable(ip_list:list[str]) -> None:
+
+def ip_reachable(ip_list: list[str]) -> None:
     """
     pings the IP to see if it is reachable
     """
@@ -10,10 +11,10 @@ def ip_reachable(ip_list:list[str]) -> None:
             f"ping {ip} -n -c 2",
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            shell=True
-            )
+            shell=True,
+        )
         if ping_reply.returncode > 0:
-            print(f'\n{ip} not reachable, please double check. . .')
+            print(f"\n{ip} not reachable, please double check. . .")
             sys.exit(1)
         else:
             print(f"\n{ip} reachable ~!\n")

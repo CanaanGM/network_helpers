@@ -1,4 +1,4 @@
-import sys 
+import sys
 from check_reachability import ip_reachable
 from validate_ip_file import validate_file
 from validate_ip import validate_ip
@@ -14,4 +14,3 @@ try:
 except KeyboardInterrupt:
     print("\n\n* Program aborted by user. Exiting...\n")
     sys.exit()
-
