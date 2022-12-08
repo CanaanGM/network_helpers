@@ -34,9 +34,10 @@ def print_devices(devices: dict) -> None:
     Args:
         devices (dict): collection of devices
     """
-    
+
     print("="*41) # header
     print("| Ip\t\tMAC Address\t\t|")
+    print("| ------------------------------------- |")
 
     for ip,mac in devices.items():
         print (f"| {ip}\t{mac}       |")   
@@ -44,4 +45,5 @@ def print_devices(devices: dict) -> None:
  
 
 user_ip = input("gimme an Ip range please and double check it there's no error handling here Q.Q: ")
+if user_ip == "": user_ip = "192.168.1.1/24"
 print_devices( scan(user_ip))
