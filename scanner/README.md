@@ -8,3 +8,5 @@ netdiscover -r 192.168.1.1/24 -i wlan1
 >look up the [scapy docs](https://scapy.readthedocs.io/en/latest/api/) 
 >tip: create a virtual env, install scapy there and dive into the code there
 
+todo: 
+- [ ] error handling xD

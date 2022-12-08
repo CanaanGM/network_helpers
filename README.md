@@ -6,4 +6,5 @@
 
 > [device_info_scanner](./scanner/README.md) is a simple implementation of netdiscover in kali via [scapy](https://scapy.readthedocs.io/en/latest/) 
 - need to run it from kali as root
-- shows u the devices on the network in a nice table
+- shows u the devices on the network in a nice 
+- no error handling tho xD 
