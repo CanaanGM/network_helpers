@@ -4,8 +4,11 @@ using `netdiscover` you can find the ips and macs for all devices just to valida
 ```bash
 netdiscover -r 192.168.1.1/24 -i wlan1
 ```
-
->look up the [scapy docs](https://scapy.readthedocs.io/en/latest/api/) 
+> Docs used
+- resource for this [ARP_Ping](https://scapy.readthedocs.io/en/latest/usage.html#arp-ping)
+- [ARP_class](https://scapy.readthedocs.io/en/latest/api/scapy.layers.l2.html)
+- [Ether_Class](https://scapy.readthedocs.io/en/latest/api/scapy.layers.l2.html#scapy.layers.l2.Ether.fields_desc)
+- [scapy docs](https://scapy.readthedocs.io/en/latest/api/) 
 >tip: create a virtual env, install scapy there and dive into the code there
 
 todo: 
