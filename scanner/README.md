@@ -10,3 +10,4 @@ netdiscover -r 192.168.1.1/24 -i wlan1
 
 todo: 
 - [ ] error handling xD
+- [ ] find a way to gather more info, can use a { "IP" : [ device, info, and, stuff ] }
