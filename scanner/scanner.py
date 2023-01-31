@@ -14,7 +14,6 @@ def scan(ip: str) -> dict[str, str]:
     arp = sc.ARP(pdst=ip)
     ether = sc.Ether(dst="ff:ff:ff:ff:ff:ff")
     
-    ## combine the request with the ether interface ? ? (look it up)
     arp_ether = ether/arp
     answered_list, ignored_list = sc.srp(arp_ether, timeout=2, verbose=False)
 
